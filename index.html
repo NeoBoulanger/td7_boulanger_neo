@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index td8 : fetch</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<main id="photo">
+  <h1>Photo : 105</h1>
+
+</main>
+
+<script id="photoTemplate" type="text/x-handlebars-template">
+  <section id="la_photo">
+    <img src="https://webetu.iutnc.univ-lorraine.fr{{photo.url.href}}">
+
+    <h4>{{photo.titre}}</h4>
+
+    <p>{{photo.descr}}</p>
+
+    <p>{{photo.format}}, {{photo.width}} x {{photo.height}}</p>
+
+  </section>
+
+  <section id="la_categorie">
+  </section>
+
+  <ul id="les_commentaires">
+  </ul>
+</script>
+
+<button id="loadGalleryBtn">Load</button>
+<button id="prevBtn">Prev</button>
+<button id="nextBtn">Next</button>
+<button id="firstBtn">First</button>
+<button id="lastBtn">Last</button>
+
+<div id="gallery"></div>
+
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script  src='js/index.js' defer ></script>
+
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+</body>
+</html>

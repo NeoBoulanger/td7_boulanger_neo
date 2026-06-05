@@ -1,0 +1,11 @@
+img {
+    max-width: 30rem;
+    height: auto;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+}
